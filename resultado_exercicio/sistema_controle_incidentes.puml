@@ -1,0 +1,66 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam roundcorner 8
+skinparam shadowstyle false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+
+skinparam Usecase {
+    BackgroundColor #F0F7FF
+    BorderColor #0066CC
+    BorderThickness 1.5
+    ArrowColor #0055AA
+    FontSize 12
+}
+
+skinparam Actor {
+    BackgroundColor #FFF9E6
+    BorderColor #D4A017
+    BorderThickness 1.5
+}
+
+actor "Relator" as Relator
+actor "Policial" as Policial
+actor "Bombeiro" as Bombeiro
+
+Policial -up-|> Relator
+Bombeiro -up-|> Relator
+
+actor "Operador do Sistema\n(Despachante)" as Operador
+
+rectangle "Sistema para Controle de Veículos em Incidentes" {
+    usecase "UC01: Registrar Incidente" as UC01
+    usecase "UC02: Direcionar Veículo Apropriado" as UC02
+    usecase "UC03: Obter Posição do Veículo" as UC03
+    usecase "UC04: Estimar Posição do Veículo" as UC04
+    usecase "UC05: Alertar Serviços de Emergência" as UC05
+    usecase "UC06: Monitorar Status dos Incidentes" as UC06
+    usecase "UC07: Atualizar Status do Veículo" as UC07
+}
+
+actor "Veículo\n(Equipe em Campo)" as Veiculo
+actor "Serviço de Emergência" as Servico
+actor "Polícia Militar" as PoliciaExt
+actor "Corpo de Bombeiros" as BombeirosExt
+actor "Ambulância (SAMU)" as AmbulanciaExt
+
+PoliciaExt -up-|> Servico
+BombeirosExt -up-|> Servico
+AmbulanciaExt -up-|> Servico
+
+Relator -- UC01
+
+Operador -- UC02
+Operador -- UC06
+
+UC02 .> UC03 : <<include>>
+UC04 .> UC02 : <<extend>>
+UC05 .> UC02 : <<extend>>
+
+UC03 -- Veiculo
+UC02 -- Veiculo
+UC07 -- Veiculo
+
+UC05 -- Servico
+@enduml
