@@ -14,7 +14,7 @@ PUML_FILE = os.path.join(BASE_DIR, 'diagrama_classes.puml')
 PNG_FILE = os.path.join(BASE_DIR, 'diagrama_classes.png')
 
 PDF_STUDENT_OUTPUT = os.path.join(BASE_DIR, '[Classes] Italo Leal.pdf')
-PDF_STANDARD_OUTPUT = os.path.join(BASE_DIR, 'exercicio_diagrama_classes.pdf')
+PDF_STANDARD_OUTPUT = os.path.join(BASE_DIR, 'exercicio-respostas.pdf')
 
 
 class SimpleExercisePDF(FPDF):
