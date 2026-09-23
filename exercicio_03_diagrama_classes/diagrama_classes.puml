@@ -1,0 +1,180 @@
+@startuml
+title Sistema para Controle de Veículos em Incidentes - Diagrama de Classes
+
+skinparam classAttributeIconSize 0
+skinparam roundcorner 6
+skinparam shadowstyle false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+skinparam nodesep 45
+skinparam ranksep 45
+
+skinparam class {
+    BackgroundColor #F7FAFC
+    BorderColor #2B6CB0
+    ArrowColor #2B6CB0
+    HeaderBackgroundColor #EBF8FF
+}
+
+skinparam enum {
+    BackgroundColor #F0FFF4
+    BorderColor #2F855A
+    HeaderBackgroundColor #C6F6D5
+}
+
+enum TipoIncidente {
+    + ACIDENTE_TRANSITO
+    + INCENDIO
+    + ASSALTO
+    + EMERGENCIA_MEDICA
+}
+
+enum NivelGravidade {
+    + BAIXA
+    + MEDIA
+    + ALTA
+}
+
+enum StatusIncidente {
+    + REGISTRADO
+    + EM_ATENDIMENTO
+    + FINALIZADO
+}
+
+enum StatusVeiculo {
+    + DISPONIVEL
+    + A_CAMINHO
+    + NO_LOCAL
+    + INDISPONIVEL
+}
+
+class Incidente {
+    - id : String
+    - dataHora : DateTime
+    - tipo : TipoIncidente
+    - gravidade : NivelGravidade
+    - status : StatusIncidente
+    - descricao : String
+    + registrar() : void
+    + atualizarStatus(novo : StatusIncidente) : void
+    + alocarVeiculo(v : Veiculo) : void
+    + precisaMaisVeiculos() : boolean
+    + estaEmAreaDeRisco() : boolean
+}
+
+class Localizacao {
+    - latitude : double
+    - longitude : double
+    - endereco : String
+    - bairro : String
+    + calcularDistancia(outra : Localizacao) : double
+}
+
+class AreaDeRisco {
+    - nome : String
+    - nivelPerigo : int
+    - exigeMultiplosVeiculos : boolean
+    - qtdMinimaVeiculos : int
+    + contem(loc : Localizacao) : boolean
+}
+
+abstract class Veiculo {
+    # id : String
+    # prefixo : String
+    # status : StatusVeiculo
+    + solicitarPosicao() : Localizacao
+    + estimarPosicao() : Localizacao
+    + calcularDistanciaAte(alvo : Localizacao) : double
+    + estaDisponivel() : boolean
+}
+
+class ViaturaPolicial {
+    - blindagem : boolean
+    - armamentoPesado : boolean
+    + patrulhar() : void
+    + interceptar() : void
+}
+
+class CaminhaoBombeiro {
+    - capacidadeAguaLitros : double
+    - escadaMagirus : boolean
+    + combaterFogo() : void
+    + resgatarFerragens() : void
+}
+
+class Ambulancia {
+    - tipoUTI : boolean
+    - suporteAvancadoVida : boolean
+    + socorrerVitima() : void
+    + estabilizarPaciente() : void
+}
+
+abstract class Relator {
+    # id : String
+    # nome : String
+    # telefone : String
+    + relatarIncidente(dados : String) : Incidente
+}
+
+class Policial {
+    - matricula : String
+    - batalhao : String
+    + atenderChamado() : void
+}
+
+class Bombeiro {
+    - matricula : String
+    - corporacao : String
+    + atenderChamado() : void
+}
+
+class ServicoEmergencia {
+    - nomeOrgao : String
+    - telefoneEmergencia : String
+    - canalIntegracao : String
+    + emitirAlertaAutomatico(inc : Incidente) : void
+}
+
+class ControleDespacho {
+    + selecionarVeiculoApropriado(inc : Incidente, frota : List<Veiculo>) : List<Veiculo>
+    + validarEnvioSeguro(inc : Incidente, veiculos : List<Veiculo>) : boolean
+    + acionarServicosEmergencia(inc : Incidente) : void
+}
+
+' Relacionamentos
+Incidente *-- "1" Localizacao : local
+Incidente o-- "0..1" AreaDeRisco : classificado em
+Incidente "1" -- "1..*" Veiculo : direcionado a
+Incidente "1" -- "1" Relator : relatado por
+Incidente "0..*" -- "0..*" ServicoEmergencia : aciona
+
+Veiculo *-- "1" Localizacao : posicaoAtual
+
+Veiculo <|-- ViaturaPolicial
+Veiculo <|-- CaminhaoBombeiro
+Veiculo <|-- Ambulancia
+
+Relator <|-- Policial
+Relator <|-- Bombeiro
+
+ControleDespacho ..> Incidente : processa
+ControleDespacho ..> Veiculo : despacha
+ControleDespacho ..> ServicoEmergencia : alerta
+
+Incidente ..> TipoIncidente
+Incidente ..> NivelGravidade
+Incidente ..> StatusIncidente
+Veiculo ..> StatusVeiculo
+
+note right of AreaDeRisco
+  <b>Fator (iv):</b> Áreas perigosas
+  exigem envio de múltiplos veículos.
+end note
+
+note right of Veiculo
+  <b>Fator (ii):</b> A posição do veículo
+  pode ser solicitada via GPS
+  ou estimada caso indisponível.
+end note
+
+@enduml
