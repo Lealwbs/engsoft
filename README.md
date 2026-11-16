@@ -29,9 +29,10 @@ engsoft/
 │   ├── exercicio_02_casos_de_uso/              # Aula 11 (09/09) - Diagrama de Casos de Uso e Cenários [RESOLVIDO]
 │   ├── exercicio_03_diagrama_classes/          # Aula 14 (21/09) - Diagrama de Classes UML [RESOLVIDO]
 │   ├── exercicio_04_implementacao_java/        # Aula 20 (19/10) - Implementação OO em Java [RESOLVIDO]
-│   └── exercicio_05_testes_junit/              # Aula 23 (04/11) - Testes de Software JUnit
+│   └── exercicio_05_testes_junit/              # Aula 23 (04/11) - Testes de Software JUnit [RESOLVIDO]
 ├── provas/                                     # Provas e correções aplicadas no semestre
-├── trabalho_pratico/                           # Instruções, slides, temas e alocação do Trabalho Prático
+├── trabalho_pratico/                           # Instruções, temas, alocação e código-fonte do TP (Urna Eletrônica)
+│   └── TP-ES-Urna-Eleitoral/                   # Implementação completa em Java/Maven/Docker + Testes (Grupo 2)
 ├── notas/                                      # Planilhas/PDFs de notas (Provas, Exercícios, TP e Geral)
 └── pagina_disciplina/                          # Cópia offline das páginas HTML, estilo CSS e medalhas (badges)
 ```
@@ -70,8 +71,9 @@ engsoft/
 4. **`exercicios/exercicio_04_implementacao_java/`** *(Aula 20 — 19/10 — **Resolvido**)*
    - Enunciados e pacote base: `exerc-implementacao_v03.pdf`, `exercicio-4-implementacao.pdf`, `exercicio-descricao.pdf`, `exercicio-4-descricao.pdf`, `bet.zip`
    - Resolução: `[Java] Italo Leal.pdf`, `[Java] Italo Leal.zip`, `src/` (código-fonte completo e suíte de testes), `diagrama_classes.puml`, `diagrama_classes.png`, `generate_delivery.py`, `README.md`
-5. **`exercicios/exercicio_05_testes_junit/`** *(Aula 23 — 04/11)*
+5. **`exercicios/exercicio_05_testes_junit/`** *(Aula 23 — 04/11 — **Resolvido**)*
    - Enunciados: `exerc-testes_v03.pdf`, `exercicio-descricao.pdf`
+   - Resolução: `[JUnit] Italo Leal.pdf`, `[JUnit] Italo Leal.zip`, `src/` (suíte completa de testes unitários JUnit 4 + modelo/serviços), `diagrama_classes.puml`, `diagrama_classes.png`, `README.md`
 
 ---
 
@@ -85,6 +87,7 @@ engsoft/
   - `tp-instrucao.pdf`: Instruções detalhadas do TP
   - `tp-temas.pdf`: Lista de temas propostos
   - `tp-alocacao.pdf`: Alocação de grupos/temas e ordem de apresentação
+  - `TP-ES-Urna-Eleitoral/`: Projeto completo do **Grupo 2 — Urna Eletrônica** (código-fonte Java em camadas `ui`, `negocio`, `dados`, testes JUnit `ServicoUrnaTest`, `Dockerfile`, `compose.yaml`, `pom.xml` e `README.md`)
 - **`notas/`**:
   - `notas.pdf` (Notas Gerais), `notas-p1.pdf`, `notas-p2.pdf`, `notas-p3.pdf`, `notas-exercicios.pdf`, `notas-tp.pdf`, `notas-tp-apresentacao.pdf`
 - **`pagina_disciplina/`**:
