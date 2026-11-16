@@ -1,0 +1,509 @@
+<html>
+<head>
+<title>Disciplina: Engenharia de Sofware</title>
+
+<link href="../../styles/default.css" type="text/css" rel="stylesheet">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23255976-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0">
+
+<table cellpadding=15 width="95%">
+<tbody>
+  <tr>
+    <td valign="center">
+      <h1>Disciplina 2026 - II</h1>
+    </td>
+  </tr>
+
+  <tr>
+    <td valign="center">
+      <h2>Engenharia de Software I</h2>
+    </td>
+  </tr>
+
+  <tr>
+    <td valign="center">
+      <p>
+	    <STRONG>Aviso</STRONG>
+	  </p>
+      <ul>
+        <li><b>Prova Substitutiva</b>. Quem deseja fazer a Prova Substitutiva na quarta (25/11) deve solicitar por email at&eacute; <b>segunda (23/11)</b>. O email deve dizer claramente qual prova o aluno deseja substituir (P1 ou P2 ou P3 ou TP).
+      <ul>
+      <br>
+    </td>
+  </tr>
+
+<!--
+        <li><b>Mudan&ccedil;a de Sala</b>. A partir da pr&oacute;xima aula (16/03),  as aulas de Engenharia de Software mudaram para a Sala 2014 do ICEx.
+        <li><b>Exerc&iacute;cio Presencial</b>. O exerc&iacute;cio do dia 27/05 (quarta) ser&aacute; presencial nos Labs 2011 e 2012.
+        <li><b>Trabalho Pr&aacute;tico</b>. A data limite para forma&ccedil;&atilde;o de grupos do TP &eacute; <b>quarta-feira (05/04)</b>. O grupo deve enviar email informando o tema escolhido e os membros do grupo.
+-->
+
+
+  <tr>
+    <td valign="center">
+      <p>
+	    <STRONG>Agenda do Curso</STRONG>
+	  </p>
+      <table cellpadding=10 width="100%" border=1>
+        <tr>
+          <td align="center"><p><STRONG>Aula</STRONG></p></td>
+          <td align="center"><p><STRONG>Data</STRONG></p></td>
+          <td align="left"><p><STRONG>Conte&uacute;do</STRONG></p></td>
+        </tr>
+        <tr>
+          <td align="center"><p>1</p></td>
+          <td align="center"><p>03/08</p></td>
+          <td align="left">
+            <p><a href="es1/aula01.pdf">Parte 1</a>: Apresenta&ccedil;&atilde;o da disciplina, livros, crit&eacute;rios de avalia&ccedil;&atilde;o, etc.</p>
+            <p><a href="es1/tp-slides.pdf">Parte 2</a>: Instru&ccedil;&otilde;es do Trabalho Pr&aacute;tico (TP).</p>
+<!--
+            <p><b>Parte 1</b>: Apresenta&ccedil;&atilde;o da disciplina, livros, crit&eacute;rios de avalia&ccedil;&atilde;o, etc.</p>
+-->
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>2</p></td>
+          <td align="center"><p>05/08</p></td>
+          <td align="left">
+            <p><a href="../aulas/motivacao-es_v03.pdf">Parte 1</a>: Motiva&ccedil;&atilde;o e conceitos fundamentais da Engenharia de Software</p>
+            <p><a href="../aulas/estrutura-es_v01.pdf">Parte 2</a>: Vis&atilde;o em camadas da Engenharia de Software</p>
+            <p><a href="../aulas/especificacao-projeto-software_v03.pdf">Parte 3</a>: Concep&ccedil;&atilde;o: Especifica&ccedil;&atilde;o e Modelagem de Software</p>
+            <p><a href="../aulas/desenvolvimento-software_v03.pdf">Parte 4</a>: Desenvolvimento: Implementa&ccedil;&atilde;o, Testes e Evolu&ccedil;&atilde;o de Software</p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>3</p></td>
+          <td align="center"><p>10/08</p></td>
+          <td align="left">
+            <p><a href="../aulas/processos-software_v03.pdf">Parte 1</a>: Processos de Software</p>
+            <p><a href="../aulas/modelo-cascata_v03.pdf">Parte 2</a>: Modelo Cascata</p>
+            <p><a href="../aulas/desenvolvimento-incremental_v03.pdf">Parte 3</a>: Desenvolvimento Incremental</p>
+            <p><a href="../aulas/integracao-configuracao_v03.pdf">Parte 4</a>: Integra&ccedil;&atilde;o e Configura&ccedil;&atilde;o</p>
+            <p><a href="../aulas/processos-mudancas_v03.pdf">Parte 5</a>: Processos de Software que Lidam com Mudan&ccedil;as</p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>4</p></td>
+          <td align="center"><p>12/08</p></td>
+          <td align="left">
+            <p><a href="../aulas/metodos-ageis_v03.pdf">Parte 1</a>: M&eacute;todos &Aacute;geis de Desenvolvimento de Software</p>
+            <p><a href="../aulas/metodos-ageis-manifesto_v03.pdf">Parte 2</a>: Manifesto &Aacute;gil</p>
+            <p><a href="../aulas/metodo-agil-xp_v03.pdf">Parte 3</a>: Programa&ccedil;&atilde;o Extrema (XP)</p>
+            <p><a href="../aulas/metodo-agil-scrum-fases_v03.pdf">Parte 4</a>: Fases do Scrum</p>
+            <p><a href="../aulas/metodo-agil-scrum-termos_v03.pdf">Parte 5</a>: Termos e Reuni&otilde;es do Scrum</p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>5</p></td>
+          <td align="center"><p>17/08</p></td>
+          <td align="left">
+            <p>Exerc&iacute;cio sobre Processos de Software</p>
+            <p><a href="es1exercises.htm">Ir para p&aacute;gina de exerc&iacute;cios</a></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>6</p></td>
+          <td align="center"><p>19/08</p></td>
+          <td align="left">
+            <p><b>Revis&atilde;o P1</b>: Responder os question&aacute;rios online at&eacute; a data da aula. N&atilde;o h&aacute; aula presencial.</p>
+            <p><a href="https://forms.gle/rjmGkVUaGFbrHFPcA" target="_blank">Question&aacute;rio 01</a>: Question&aacute;rio online sobre Motiva&ccedil;&atilde;o e Conceitos Fundamentais</p>
+            <p><a href="https://forms.gle/oqRsY6riTB2DJx4z6" target="_blank">Question&aacute;rio 02</a>: Question&aacute;rio online sobre Processos de Software</p>
+            <p><a href="https://forms.gle/zMGBbaaLCvun9qis6" target="_blank">Question&aacute;rio 03</a>: Question&aacute;rio online sobre M&eacute;todos &Aacute;geis</p>
+<!--
+            <p>Revis&atilde;o P1</p>
+-->
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>7</p></td>
+          <td align="center"><p>24/08</p></td>
+          <td align="left">
+            <p><a href="../aulas/req-usuario-sistema_v03.pdf">Parte 1</a>: Requisitos de Usu&aacute;rios e Requisitos do Sistema</p>
+            <p><a href="../aulas/req-funcional-rnf_v03.pdf">Parte 2</a>: Requisitos Funcionais e Requisitos N&atilde;o Funcionais</p>
+            <p><a href="../aulas/eng-req-processos_v03.pdf">Parte 3</a>: Processos de Engenharia de Requisitos</p>
+            <p><a href="../aulas/eng-req-tecnicas_v03.pdf">Parte 4</a>: T&eacute;cnicas de Elicita&ccedil;&atilde;o e Especifica&ccedil;&atilde;o de Requisitos</p>
+            <p><a href="https://forms.gle/axyhqPk2dPcjVZ6eA" target="_blank">Question&aacute;rio 04</a>: Question&aacute;rio online sobre Engenharia de Requisitos</p>
+<!--
+-->
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>8</p></td>
+          <td align="center"><p>26/08</p></td>
+          <td align="left">
+            <p><b>Prova 1</b></p>
+            <p><b>Trabalho Pr&aacute;tico</b>: prazo para escolher o tema e formar os grupos</p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>9</p></td>
+          <td align="center"><p>31/08</p></td>
+          <td align="left">
+            <p><b>Trabalho Pr&aacute;tico</b>: Apresenta&ccedil;&atilde;o Parcial 1 do Trabalho Pr&aacute;tico (Planejamento e Requisitos)</p>
+            <p>O objetivo desta apresenta&ccedil;&atilde;o parcial deve ser apresentar o modelo de processo, o cronograma e os requisitos do sistema.</p>
+            <p><a href="es1/tp-alocacao.pdf">Ordem de Apresenta&ccedil;&atilde;o</a>: Esta deve ser a ordem de apresenta&ccedil;&atilde;o dos trabalhos.</p>
+            <p>A apresenta&ccedil;&atilde;o deve ser oral, com slides, e durar de 4 a 6 minutos por grupo.</p>
+            <p>O PDF dos slides usado na apresenta&ccedil;&atilde;o deve ser enviado para o email da disciplina at&eacute; esta data.</p>
+            <p><a href="es1/es1-p1.pdf">Parte 2</a>: Corre&ccedil;&atilde;o da Prova 1.</p>
+<!--
+-->
+          </td>
+        </tr>
+
+        <tr>
+          <td align="center"><p>10</p></td>
+          <td align="center"><p>02/09</p></td>
+          <td align="left">
+            <p><a href="../aulas/uml-intro_v02.pdf">Parte 1</a>: Introdu&ccedil;&atilde;o a UML</p>
+            <p><a href="../aulas/uml-diagramas-estrutura_v01.pdf">Parte 2</a>: UML: Diagramas Estruturais</p>
+            <p><a href="../aulas/uml-diagramas-comportamento_v01.pdf">Parte 3</a>: UML: Diagramas Comportamentais</p>
+            <p><a href="../aulas/uml-casos-de-uso_v03.pdf">Parte 4</a>: Diagrama de Casos de Uso</p>
+            <p><a href="../aulas/uml-casos-de-uso-relacionamentos_v01.pdf">Parte 5</a>: Relacionamentos do Diagrama de Casos de Uso</p>
+            <p><a href="../aulas/uml-casos-de-uso-cenarios_v01.pdf">Parte 6</a>: Documentando Casos de Uso com Cen&aacute;rios</p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>-</p></td>
+          <td align="center"><p>07/09</p></td>
+          <td align="left">
+            <p><i>Feriado</i></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>11</p></td>
+          <td align="center"><p>09/09</p></td>
+          <td align="left">
+            <p>Exerc&iacute;cio sobre Diagrama de Casos de Uso e Cen&aacute;rios</p>
+            <p><a href="es1exercises.htm">Ir para p&aacute;gina de exerc&iacute;cios</a></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>12</p></td>
+          <td align="center"><p>14/09</p></td>
+          <td align="left">
+            <p><a href="../aulas/arquitetura-sw_v03.pdf">Parte 1</a>: Arquitetura de Software</p>
+            <p><a href="../aulas/padroes-arquiteturais_intro_v03.pdf">Parte 2</a>: Introdu&ccedil;&atilde;o a Padr&otilde;es Arquiteturais</p>
+            <p><a href="../aulas/padroes-arquiteturais_estrutura_v03.pdf">Parte 3</a>: Padr&otilde;es Arquiteturais: Da Desordem a Estrutura</p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>13</p></td>
+          <td align="center"><p>16/09</p></td>
+          <td align="left">
+            <p><a href="../aulas/desenvolvimento-oo-intro_v01.pdf">Parte 1</a>: Desenvolvimento de Software Orientado a Objetos</p>
+            <p><a href="../aulas/modelagem-oo_v03.pdf">Parte 2</a>: Modelagem de Software Orientado a Objetos</p>
+            <p><a href="../aulas/uml-diagrama-classes_v02-1.pdf">Parte 3</a>: Diagrama de Classes</p>
+            <p><a href="../aulas/uml-diagrama-classes-relacionamentos_v01.pdf">Parte 4</a>: Relacionamentos do Diagrama de Classes</p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>14</p></td>
+          <td align="center"><p>21/09</p></td>
+          <td align="left">
+            <p>Exerc&iacute;cio sobre Diagrama de Classes</p>
+            <p><a href="es1exercises.htm">Ir para p&aacute;gina de exerc&iacute;cios</a></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>15</p></td>
+          <td align="center"><p>23/09</p></td>
+          <td align="left">
+            <p><a href="../aulas/uml-diagrama-sequencia-intro_v01.pdf">Parte 1</a>: Diagrama de Sequ&ecirc;ncia</p>
+            <p><a href="../aulas/uml-diagrama-sequencia-mensagens_v01.pdf">Parte 2</a>: Mensagens no Diagrama de Sequ&ecirc;ncia</p>
+            <p><a href="../aulas/uml-caso-de-uso-sequencia_v03.pdf">Parte 3</a>: Detalhando Casos de Uso com Diagrama de Sequ&ecirc;ncia</p>
+            <p><a href="../aulas/uml-diagrama-comunicacao_v01.pdf">Parte 4</a>: Diagrama de Comunica&ccedil;&atilde;o</p>
+            <p><a href="../aulas/uml-diagrama-atividades_v01.pdf">Parte 5</a>: Diagrama de Atividades</p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>16</p></td>
+          <td align="center"><p>28/09</p></td>
+          <td align="left">
+            <p><b>Revis&atilde;o P2</b>: Responder os question&aacute;rios online. N&atilde;o h&aacute; aula presencial.</p>
+            <p><a href="https://forms.gle/7Y5VyovdDyYFcs9a9" target="_blank">Question&aacute;rio 05</a>: Question&aacute;rio online sobre Diagrama de Casos de Uso</p>
+            <p><a href="https://forms.gle/NqLwS4pgBmUnCUa66" target="_blank">Question&aacute;rio 06</a>: Question&aacute;rio online sobre Arquitetura de Software</p>
+            <p><a href="https://forms.gle/VQpMB7dH7jb74mwU9" target="_blank">Question&aacute;rio 07</a>: Question&aacute;rio online sobre Diagrama de Classes</p>
+            <p><a href="https://forms.gle/Gr97hLMeQUsmiLUL6" target="_blank">Question&aacute;rio 08</a>: Question&aacute;rio online sobre Diagramas UML: Sequ&ecirc;ncia, Comunica&ccedil;&atilde;o e Atividades</p>
+<!--
+            <p>Revis&atilde;o P2</p>
+
+-->
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>17</p></td>
+          <td align="center"><p>30/09</p></td>
+          <td align="left">
+            <p><b>Prova 2</b></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>18</p></td>
+          <td align="center"><p>05/10</p></td>
+          <td align="left">
+            <p><b>Trabalho Pr&aacute;tico</b>: Apresenta&ccedil;&atilde;o Parcial 2 do Trabalho Pr&aacute;tico (Modelagem)</p>
+            <p>O objetivo desta apresenta&ccedil;&atilde;o parcial deve ser apresentar o projeto arquitetural e o projeto detalhado.</p>
+            <p><a href="es1/tp-alocacao.pdf">Ordem de Apresenta&ccedil;&atilde;o</a>: Esta deve ser a ordem de apresenta&ccedil;&atilde;o dos trabalhos.</p>
+            <p>A apresenta&ccedil;&atilde;o deve ser oral, com slides, e durar de 4 a 6 minutos por grupo.</p>
+            <p>O PDF dos slides usado na apresenta&ccedil;&atilde;o deve ser enviado para o email da disciplina at&eacute; esta data.</p>
+            <p><a href="es1/es1-p2.pdf">Parte 2</a>: Corre&ccedil;&atilde;o da Prova 2.</p>
+<!--
+-->
+          </td>
+        </tr>
+
+        <tr>
+          <td align="center"><p>19</p></td>
+          <td align="center"><p>07/10</p></td>
+          <td align="left">
+            <p><a href="../aulas/poo-java_v01-2.pdf">Parte 1</a>: Programa&ccedil;&atilde;o Orientada a Objetos</p>
+            <p><a href="../aulas/poo-java-classes_v01.pdf">Parte 2</a>: Programa&ccedil;&atilde;o em Java: Classes e Relacionamentos</p>
+            <p><a href="../aulas/poo-java-membros_v01.pdf">Parte 3</a>: Programa&ccedil;&atilde;o em Java: Construtores, M&eacute;todos, Vari&aacute;veis e Constantes</p>
+            <p><a href="../aulas/idiomas-java_v02-2.pdf">Parte 4</a>: Idiomas de Programa&ccedil;&atilde;o em Java</p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>-</p></td>
+          <td align="center"><p>12/10</p></td>
+          <td align="left">
+            <p><i>Feriado</i></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>-</p></td>
+          <td align="center"><p>14/10</p></td>
+          <td align="left">
+            <p><i>Atividades Complementares Noturno</i></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>20</p></td>
+          <td align="center"><p>19/10</p></td>
+          <td align="left">
+            <p>Exerc&iacute;cio sobre Implementa&ccedil;&atilde;o Java</p>
+            <p><a href="es1exercises.htm">Ir para p&aacute;gina de exerc&iacute;cios</a></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>21</p></td>
+          <td align="center"><p>21/10</p></td>
+          <td align="left">
+            <p><a href="../aulas/verificacao-validacao_v03.pdf">Parte 1</a>: Verifica&ccedil;&atilde;o e Valida&ccedil;&atilde;o</p>
+            <p><a href="../aulas/inspecao-software_v03.pdf">Parte 2</a>: Inspe&ccedil;&atilde;o de Software</p>
+            <p><a href="../aulas/testes-desenvolvimento_v03.pdf">Parte 3</a>: Testes de Desenvolvimento</p>
+            <p><a href="../aulas/testes-de-unidade_v03.pdf">Parte 4</a>: Testes de Unidade</p>
+            <p><a href="../aulas/testes-de-sistema_v03.pdf">Parte 5</a>: Testes de Integra&ccedil;&atilde;o e de Sistema</p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>22</p></td>
+          <td align="center"><p>26/10</p></td>
+          <td align="left">
+            <p><a href="../aulas/evolucao-software_v03.pdf">Parte 1</a>: Evolu&ccedil;&atilde;o de Software</p>
+            <p><a href="../aulas/manutencao-software_v03.pdf">Parte 2</a>: Manuten&ccedil;&atilde;o de Software</p>
+            <p><a href="../aulas/bad-smell-refactoring_v03.pdf">Parte 3</a>: Reengenharia, Refatora&ccedil;&atilde;o e Bad Smells</p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>-</p></td>
+          <td align="center"><p>28/10</p></td>
+          <td align="left">
+            <p><i>Feriado</i></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>-</p></td>
+          <td align="center"><p>02/11</p></td>
+          <td align="left">
+            <p><i>Feriado</i></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>23</p></td>
+          <td align="center"><p>04/11</p></td>
+          <td align="left">
+            <p>Exerc&iacute;cio sobre Testes de Software JUnit</p>
+            <p><a href="es1exercises.htm">Ir para p&aacute;gina de exerc&iacute;cios</a></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>24</p></td>
+          <td align="center"><p>09/11</p></td>
+          <td align="left">
+            <p><b>Revis&atilde;o P3</b>: Responder os question&aacute;rios online. N&atilde;o h&aacute; aula presencial.</p>
+            <p><a href="https://forms.gle/q8RzXKS27cf2apd26" target="_blank">Question&aacute;rio 09</a>: Question&aacute;rio online sobre Idiomas de Programa&ccedil;&atilde;o</p>
+            <p><a href="https://forms.gle/o4QAyoZgKXNtcVDfA" target="_blank">Question&aacute;rio 10</a>: Question&aacute;rio online sobre Testes de Software</p>
+            <p><a href="https://forms.gle/yE9uwD3WsR6LYT7F9" target="_blank">Question&aacute;rio 11</a>: Question&aacute;rio online sobre Evolu&ccedil;&atilde;o de Software</p>
+<!--
+            <p>Revis&atilde;o P3</p>
+-->
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>25</p></td>
+          <td align="center"><p>11/11</p></td>
+          <td align="left">
+            <p><b>Prova 3</b></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>26</p></td>
+          <td align="center"><p>16/11</p></td>
+          <td align="left">
+            <p><b>Trabalho Pr&aacute;tico</b>: Apresenta&ccedil;&atilde;o Final do Trabalho Pr&aacute;tico (Implementa&ccedil;&atilde;o e Testes)</p>
+            <p>O objetivo da apresenta&ccedil;&atilde;o deve ser mostrar a implementa&ccedil;&atilde;o e os testes do sistema.</p>
+            <p><a href="es1/tp-alocacao.pdf">Ordem de Apresenta&ccedil;&atilde;o</a>: Esta deve ser a ordem de apresenta&ccedil;&atilde;o dos trabalhos.</p>
+            <p>A apresenta&ccedil;&atilde;o deve ser oral, com slides, e durar de 6 a 10 minutos.</p>
+            <p>O PDF dos slides usado na apresenta&ccedil;&atilde;o deve ser enviado para o email da disciplina.</p>
+<!--
+-->
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>27</p></td>
+          <td align="center"><p>18/11</p></td>
+          <td align="left">
+            <p><b>Trabalho Pr&aacute;tico</b>: Apresenta&ccedil;&atilde;o Final do Trabalho Pr&aacute;tico (Implementa&ccedil;&atilde;o e Testes)</p>
+            <p>O objetivo da apresenta&ccedil;&atilde;o deve ser mostrar a implementa&ccedil;&atilde;o e os testes do sistema.</p>
+            <p><a href="es1/tp-alocacao.pdf">Ordem de Apresenta&ccedil;&atilde;o</a>: Esta deve ser a ordem de apresenta&ccedil;&atilde;o dos trabalhos.</p>
+            <p>A apresenta&ccedil;&atilde;o deve ser oral, com slides, e durar de 6 a 10 minutos.</p>
+            <p>O PDF dos slides usado na apresenta&ccedil;&atilde;o deve ser enviado para o email da disciplina.</p>
+            <p><b>Trabalho Pr&aacute;tico</b>: Data da entrega final para todos os grupos</p>
+<!--
+            <p><a href="es1/es1-p3.pdf">Parte 2</a>: Corre&ccedil;&atilde;o da Prova 3.</p>
+-->
+          </td>
+        </tr>
+
+        <tr>
+          <td align="center"><p>28</p></td>
+          <td align="center"><p>23/11</p></td>
+          <td align="left">
+            <p>Revis&atilde;o para Prova Substitutiva</p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>29</p></td>
+          <td align="center"><p>25/11</p></td>
+          <td align="left">
+            <p><b>Prova Substitutiva</b></p>
+          </td>
+        </tr>
+
+        <tr>
+          <td align="center"><p>-</p></td>
+          <td align="center"><p>30/11</p></td>
+          <td align="left">
+            <p><i>Resultado final (n&atilde;o tem aula)</i></p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><p>30</p></td>
+          <td align="center"><p>02/12</p></td>
+          <td align="left">
+            <p><b>Exame Especial</b> (mediante solicita&ccedil;&atilde;o por email)</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td valign="center">
+      <p>
+	    <STRONG>Notas</STRONG>
+	  </p>
+      <ul>
+        <li><a href="es1/notas.pdf">Notas Gerais</a>. Tabela com as notas de todas as atividades.
+        <li><a href="es1/notas-p1.pdf">Prova 1</a>. Tabela com as notas da Prova 1.
+        <li><a href="es1/notas-p2.pdf">Prova 2</a>. Tabela com as notas da Prova 2.
+        <li><a href="es1/notas-p3.pdf">Prova 3</a>. Tabela com as notas da Prova 3.
+        <li><a href="es1/notas-exercicios.pdf">Exerc&iacute;cios</a>. Tabela com as notas dos exerc&iacute;cios.
+        <li><a href="es1/notas-tp.pdf">Trabalho Pr&aacute;tico</a>. Tabela com as notas do prabalho pr&aacute;tico.
+        <li><a href="es1/notas-tp-apresentacao.pdf">Apresenta&ccedil;&atilde;o do TP</a>. Tabela com as notas das apresenta&ccedil;&otilde;es do trabalho pr&aacute;tico.
+      </ul>
+      <br>
+    </td>
+  </tr>
+
+<!--
+
+        <li><a href="es1/notas-ps.pdf">Prova Substitutiva</a>. Tabela com as notas da Prova Substitutiva.
+-->
+
+  <tr>
+    <td valign="center">
+      <p>
+	    <STRONG>Trabalho Pr&aacute;tico</STRONG>
+	  </p>
+      <ul>
+        <li><a href="es1/tp-slides.pdf">Apresenta&ccedil;&atilde;o</a>. Slides com um resumo das instru&ccedil;&otilde;es do trabalho pr&aacute;tico.
+        <li><a href="es1/tp-instrucao.pdf">Instru&ccedil;&otilde;es</a>. Instru&ccedil;&otilde;es gerais sobre o trabalho pr&aacute;tico.
+        <li><a href="es1/tp-temas.pdf">Temas</a>. Lista de temas para trabalho pr&aacute;tico.
+        <li><a href="es1/tp-alocacao.pdf">Aloca&ccedil;&atilde;o</a>. Aloca&ccedil;&atilde;o de temas do trabalho pr&aacute;tico.
+      </ul>
+      <br>
+    </td>
+  </tr>
+
+  <tr>
+    <td valign="center">
+      <p>
+	    <STRONG>Bibliografia Principal</STRONG>
+	  </p>
+      <p>
+        Ian Sommerville. <a href="https://www.amazon.com.br/Engenharia-software-Ian-Sommerville-ebook/dp/B07WG46WYT/" target="_blank">Engenharia de Software</a>, 10a. Edi&ccedil;&atilde;o. Pearson, 2019.<br>
+	    Grady Booch, James Rumbaugh, Ivar Jacobson. <a href="https://www.amazon.com.br/UML-Guia-Usu%C3%A1rio-Grady-Booch/dp/8535217843" target="_blank">UML, Guia do Usu&aacute;rio</a>, 2a Edi&ccedil;&atilde;o. Editora Campus, 2006.
+	  </p>
+    </td>
+  </tr>
+
+</tbody>
+</table>
+
+<table cellpadding=15 width="100%">
+  <tr>
+    <td align="left" valign="top">
+      <h2>Contatos</h2>
+      <p>
+        <STRONG>disciplina.eduardo</STRONG><img src="../../pictures/at.jpg" border="0" valign="botton"><STRONG>gmail.com</STRONG>
+      </p>
+    </td>
+    <td>
+      <table cellpadding=10 width="100%" border=1>
+        <tr>
+          <td align="left">
+            <p>
+              Departamento de Ci&ecirc;cia da Computa&ccedil;&atilde;o<br>
+              Av. Ant&ocirc;nio Carlos, 6627 - ICEx - Pampulha<br>
+              Belo Horizonte - CEP: 31270-010<br>
+              Minas Gerais - Brasil
+            </p>
+          </td>
+          <td align="right">
+            <p>
+              Sala: 7321<br>
+              Telefone: +55 (31) 3409-5878
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

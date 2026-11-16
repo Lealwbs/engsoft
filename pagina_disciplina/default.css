@@ -1,0 +1,62 @@
+BODY, TD {
+	font-family: Verdana;
+	font-size: 80%;
+}
+
+TH {
+	font-family: Verdana;
+	font-size: 80%;
+	text-align:left;
+}
+
+H1 {
+	font-family: Verdana;
+	font-size:130%;
+	margin-bottom:3pt;
+}
+
+H2 {
+	font-family: Verdana;
+	font-size:110%;
+	margin-top:3pt;
+	margin-bottom:3pt;
+}
+
+H3 {
+	font-family: Verdana;
+	font-size:100%;
+	margin-top:3pt;
+	margin-bottom:3pt;
+	color:#000099;
+}
+
+H4 {
+	font-family: Verdana;
+	font-size:100%;
+	margin-top:3pt;
+	margin-bottom:3pt;
+}
+
+PRE {
+	font-family: Courier New;
+	font-size:100%;
+	margin-top:3pt;
+	margin-bottom:3pt;
+}
+
+.row1 {
+	background-color:#ffffdd;
+}
+
+.row2 {
+	background-color:#ffffff;
+}
+
+dd {
+   margin-bottom:6pt;
+}
+
+.6after {
+	margin-bottom:6pt;
+}
+
