@@ -25,7 +25,7 @@ Também foi implementada a classe abstrata `Relator` com as subclasses `Policial
 ## Estrutura do Projeto
 
 ```
-exercicio_04/
+exercicio_04_implementacao_java/
 ├── src/
 │   └── br/
 │       └── ufmg/
